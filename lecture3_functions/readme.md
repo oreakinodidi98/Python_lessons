@@ -1,0 +1,75 @@
+# function
+
+- functions are there to reduce repeated code
+- named block of code that can be called and reused mmultiple times
+- e.g. a recipe
+- contains a set of instructions to create a dish
+- can be used multiple times
+- sets: defined operations
+- A Union B
+- intersection of A and B
+- Difference between Set A and Set B
+- Complement all the sets of A
+- to execute a function
+
+```py
+def add (num1 ,num2):
+    """This function adds two numbers together and returns the result."""
+    return num1 + num2
+# arguments 
+
+print(add(5, 3))
+"""so 5 and 3 are arguments of the function add, and num1 and num2 are parameters of the function add."""
+sum_value = add(5, 3)
+```
+
+## parameters Vs argument
+
+- paramters passed through the function header
+- arguments are values passed to the function when called
+- return statment: sending a message to where you called the function from
+
+## function types
+
+- built in functions
+  - simply call and guive inforation
+  - print ()
+  - len()
+  - max()
+  - min()
+- user efiened functions
+  - functions you create yourself for specific task
+
+## scope
+
+- accesibility of variables in different parts of a program
+- global scope
+  - variables or functions defined outside of any function or class
+- local scope
+  - variables or functions defined inside of any function or class
+  - can only be accesed inside the function and not visible outside of it
+- block scope
+
+## stack traces
+
+- generated when an error occurs in pthon
+- show the sequence of function calls leading up to the error
+- Error type: syntax, Name , Type Error
+- Error message: description of error , providing error message
+- Traceback: list of function calls
+
+```py
+def divide (a, b);
+    return a/b
+# return keyword is optional
+def main():
+    result = divide (10, 0)
+    print (result)
+
+main()
+```
+
+## debugging
+
+- identifying or fixing errors in our programm
+- 

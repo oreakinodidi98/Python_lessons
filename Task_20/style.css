@@ -1,0 +1,57 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #17142c;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    margin-bottom: 20px;
+  }
+  
+  /* Section Styling */
+  section {
+    margin-bottom: 40px;
+  }
+  
+  /* Image Styling */
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Form Styling */
+  form .form-control,
+  form .form-select {
+    margin-bottom: 15px;
+  }
+  
+  form button {
+    display: block;
+    width: 100%;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
+  }
+  

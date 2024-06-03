@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!-- The lang attribute is set to "zxx" (used when the language is unknown) as the page contains 
+    Lorem ipsum text. Normally it would be "en" for English or the preferred language of your choice. -->
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Doe - CV</title>
+  </head>
+  <body>
+    <!-- Header section containing navigation links and profile picture -->
+    <header>
+      <h1>John Doe</h1>
+      <!-- Profile picture -->
+      <img
+        src="https://placehold.co/200x200/png"
+        alt="John Doe profile picture"
+        height="150"
+        width="150"
+      />
+      <!-- Navigation links to different sections of the CV -->
+      <nav>
+        <ul>
+          <li><a href="#bio">Bio</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#work">Work Experience</a></li>
+          <li><a href="#skills">Skills and Competencies</a></li>
+          <li><a href="#contact">Contact details</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Main content comprising of different sections -->
+    <main>
+      <!-- Bio -->
+      <section id="bio">
+        <h2>Bio</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <hr />
+      </section>
+
+      <!-- Education -->
+      <section id="education">
+        <h2>Education</h2>
+          <p>January 2024</p>
+          <h3>HyperionDev</h3>
+          <p>Full-Stack Web Developer Bootcamp</p>
+        </div>
+        <hr />
+      </section>
+
+      <!-- Work experience -->
+      <section id="work">
+        <h2>Work Experience</h2>
+          <p>March 2023 - Present</p>
+          <h3>Company X</h3>
+          <h4>Frontend Developer</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        <hr />
+      </section>
+
+      <!-- Skills and competencies -->
+      <section id="skills">
+        <h2>Skills and Competencies</h2>
+        <h4>Soft Skills</h4>
+          <ul>
+            <li>Communication</li>
+            <li>Teamwork</li>
+            <li>Problem-solving</li>
+          </ul>
+          <h4>Hard Skills</h4>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        <hr />
+      </section>
+
+      <!-- Contact details -->
+      <section id="contact">
+        <h2>Contact details</h2>
+        <p>
+          Full name: John Doe <br />
+          Phone number: 000 000 0000 <br />
+          Email address: johndoe@gmail.com <br />
+        </p>
+        <h3>Let's connect</h3>
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+          </li>
+        </ul>
+        <hr />
+      </section>
+      <!-- Form elements  -->
+      <!-- Check URL to see if the data is appended to the URL in the form of query parameters -->
+      <!-- The action attribute specifies where to send the form-data when a form is submitted. 
+        This is normally a file on the server which would be referenced as the value for the 
+        action attribute -->
+      <section>
+        <h2>Discover content:</h2>
+        <form action="index.html" method="get">
+          <!-- The for attribute in the <label> tag should be equal to the id attribute of the <input> 
+          element to bind them together. -->
+          <label for="search">Search</label>
+          <input type="text" id="search" name="search" />
+          <button type="submit">Submit</button>
+        </form>
+        <hr />
+      </section>
+
+      <section>
+        <h2>Send an email:</h2>
+        <form action="index.html" method="post">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+          <br />
+          <label for="message">Message</label>
+          <textarea id="message" name="message"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
+
+<!--
+  Additional Note:
+  Consider using the Developer tools to monitor the network requests made by the browser. 
+  First, open the webpage and right click on any page element. 
+  Thereafter, select "Inspect" from the menu.
+  Next, navigate to the "Network" tab to view all HTTP requests made by the browser.
+
+  You will be able to view:
+  1. The "Headers" which contains the metadata about the requests and responses.
+  2. The "Payload" which contains the data being sent in the request or response.
+-->

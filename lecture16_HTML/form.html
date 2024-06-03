@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Page</title>
+  </head>
+  <body>
+    <header>
+      <h1>Form page</h1>
+      <br />
+    </header>
+
+    <nav>
+      <h2>Navigation Bar</h2>
+      <hr />
+      <ol>
+        <!-- nav bar to home section  -->
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ol>
+    </nav>
+    <main>
+      <section id="form">
+        <h3>Form</h3>
+        <p>Fill in the form below</p>
+        <form action="/lecture16_HTML/about.html" method="get|post">
+          <label> First name: </label>
+          <input type="text" name="first_name" id="first_name" required /><br />
+          <label> Last name: </label>
+          <input type="text" name="last_name" id="last_name" required /><br />
+          <label> Email: </label>
+          <input type="email" name="email" id="email" required /><br />
+          <fieldset>
+            <legend>Choose your Gender:</legend>
+
+            <div>
+              <input type="checkbox" id="gender_male" name="gender_male" checked />
+              <label for="male">Male</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="gender_female" name="gender_female" />
+              <label for="gender_female">Female</label>
+            </div>
+          </fieldset>
+          <br />
+          <label> Gender: </label>
+          <!-- slecet element is used to create a drop down -->
+          <select name="gender" id="gender_value">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+          <br />
+          <label> Age:</label>
+          <input type="number" name="age" id="age" required /><br />
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+
+      <section id="table">
+        <h3>table</h3>
+        <table>
+          <tr>
+            <td>First Name, cell1</td>
+            <td>Last Name</td>
+            <td>Email</td>
+          </tr>
+          <tr>
+            <td>Row 2, cell 1</td>
+            <td>Row 2, cell 2</td>
+            <td>Row 2, cell 3</td>
+          </tr>
+          <tr>
+            <td>Row 3, cell 1</td>
+            <td>Row 3, cell 2</td>
+            <td>Row 3, cell 3</td>
+          </tr>
+          <tr>
+            <td>Row 4, cell 1</td>
+            <td>Row 4, cell 2</td>
+            <td>Row 4, cell 3</td>
+          </tr>
+        </table>
+      </section>
+
+    </main>
+  </body>
+
+  <footer>
+    <p>&copy; 2024 My_Website.com</p>
+  </footer>
+</html>

@@ -1,0 +1,53 @@
+# Lesson 1: basic comands
+
+pwd- print current working directory
+ls - lost contetn
+cd <directory> - change directory to specified
+mkdir <directory> - create a new directory
+touch <file> - create a new file
+rm <file> - remove a file
+cp <source><destination> - copy a file or directory
+mv <source><destination> - move a file or directory
+exit python by ctrl+z+enter
+New-Item -ItemType File -Name README.md
+## data types
+
+- **int**: whole number
+- **float**: number with a decimal point
+- **string**: sequence of characters -> use single or double quotes
+- **boolean**: true of false. contitional statments
+- **None**: absence of a value or null value -> container that stores nothing
+- dont need to declare variable name, can type variable and value
+- Python is a runtime language -> can type code and see live change 
+- compile languaage -> need to compile the whole file before seeing results
+
+## condition staments
+
+- decision making tools in programming
+- **if** condition:
+- **elif** another_condition:
+- **else**:
+
+**Example1:**
+
+```python
+age = 16
+if age >= 18:
+    print("you are eligable to vote")
+else
+    print("you are not eligable to vote")
+```
+
+**Example2:**
+
+```python
+age = 85
+if age >= 90:
+    print("Class: A")
+elif age >= 80:
+    print("Class: B")
+elif age >= 70:
+    print("Class: C")
+else:
+    print("Class: D")
+```

@@ -1,0 +1,86 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  .body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Header styles */
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Navigation styles */
+  .nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    list-style: circle;
+  }
+  
+  .nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .nav ul li a:hover {
+    color: #777;
+  }
+  
+  /* Main section styles */
+  .main {
+    padding: 20px;
+  }
+  
+  /* Section styles */
+  .section {
+    margin-bottom: 30px;
+  }
+  
+  /* Section heading styles */
+  .section h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Section content styles */
+  .section p {
+    color: #666;
+  }
+  
+  /* Image styles */
+  .section img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Footer text styles */
+  .footer p {
+    margin: 0;
+  }
+  

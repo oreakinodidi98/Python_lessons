@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+
+{% block title %}Board - {{ page_title }} {% endblock %}
+
+{% block content %}
+<div class="form-container">
+    <form action="{% url 'author_create' %}" method="post">
+        {% csrf_token %}
+        {{ author_form.as_p }}
+        <div class="form-group">
+            <button type="submit">Login</button>
+        </div>
+    </form>
+    <p>Don't have an account? <a href="{% url 'register' %}">Register</a></p>
+</div>
+{% endblock %}

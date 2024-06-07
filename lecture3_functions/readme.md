@@ -72,4 +72,53 @@ main()
 ## debugging
 
 - identifying or fixing errors in our programm
-- 
+
+## Revision notes
+
+- Called methods when used in OOP Classes
+- Functions help organise code, make it more readable, and facilitate debugging and maintenance
+- Functions with two required positional inputs
+  - my_function(input1, input2)
+- Functions with one required positional input and one optional keyword input:
+  - my_function(input1, keyword_arg=input2)
+
+## built in functions
+
+```bash
+print("Hello, World")
+print(len("hello"))
+print(list(range(5)))
+```
+
+## creating Custom Functions
+
+```bash
+def greet(name):
+  return f"hello, {name}!"
+
+print(greet("allice"))
+####################################
+def square(number):
+  return number*number
+
+result=square(4)
+print(result)
+```
+
+## HOF , High order Function
+
+- A function that takes other functions as arguments or returns a function
+- Accepting a function as an argument, altering it, and then returning the altered function
+
+```py
+numbers = [1, 2, 3, 4, 5]
+# using squaed
+squared = list(map(lamba x: x * x, numbers))
+print(squared)
+# using filter
+evens = list(filter(lamba x: x % 2 == 0, numbers))
+print(evens)
+# using reduce
+total = reduce(lamba s, y: x + y, numbers)
+print(total)
+```

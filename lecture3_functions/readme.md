@@ -119,6 +119,7 @@ print(squared)
 evens = list(filter(lamba x: x % 2 == 0, numbers))
 print(evens)
 # using reduce
+from functools import reduce
 total = reduce(lamba s, y: x + y, numbers)
 print(total)
 ```

@@ -118,8 +118,15 @@ print(squared)
 # using filter
 evens = list(filter(lamba x: x % 2 == 0, numbers))
 print(evens)
-# using reduce
+# using reduce -. one answer back
 from functools import reduce
-total = reduce(lamba s, y: x + y, numbers)
+total = reduce(lamba x, y: x + y, numbers)
 print(total)
 ```
+
+## best practise for dunctions
+
+- Descriptive Function Names
+- Single Responsibility Principle: One function, one responsibility
+- Avoiding Global Variables
+- include Docstrings

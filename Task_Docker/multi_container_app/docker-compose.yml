@@ -1,0 +1,30 @@
+services:
+# 2 main services
+
+# 1st one called web, which is the main application
+  web:
+  # build the image from the Dockerfile in the app directory
+    build: ./app
+    # expose the port 5000 of the container to the port 5000 of the host
+    ports:
+      - "5000:5000"
+      # environment variables
+    environment:
+      - MYSQL_ROOT_PASSWORD=you_cant_crack_this
+      # depends on the db service, to make sure that the db service is up and running before the web service
+    depends_on:
+      - db
+
+# 2nd one called db, which is the database service
+  db:
+  # uses the mysql image from the docker hub as base image
+    image: mysql:8.0
+    # sets the root password for the mysql database using enviroment variables
+    environment:
+      MYSQL_ROOT_PASSWORD: you_cant_crack_this
+    # volumes to persist the data
+    volumes:
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+    # expose the port 3306 of the container to the port 3306 of the host
+    ports:
+      - "3306:3306"

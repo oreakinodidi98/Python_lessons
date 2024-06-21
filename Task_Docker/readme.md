@@ -73,6 +73,8 @@ connection = mysql.connector.connect(
 - store variables values in env_variable.py file
 - create coursur
   - allows you to come in and out of db and grab the information needed
+- Create Docker File (**FROM, WORKDIR, COPY, RUN, EXPOSE, CMD**).
+- Create Docker_compose.yaml file
 
 ## Docker command
 

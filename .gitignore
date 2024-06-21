@@ -1,5 +1,6 @@
 # Ignore all virtual environments
 venv/
+docker_venv/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

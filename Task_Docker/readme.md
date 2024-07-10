@@ -74,7 +74,8 @@ connection = mysql.connector.connect(
 - create coursur
   - allows you to come in and out of db and grab the information needed
 - Create Docker File (**FROM, WORKDIR, COPY, RUN, EXPOSE, CMD**).
-- Create Docker_compose.yaml file
+- Create docker-compose.yml file
+- docker-compose up --build
 
 ## Docker command
 

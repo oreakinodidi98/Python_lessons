@@ -122,3 +122,4 @@ docker run --name jenkins-blueocean --restart=on-failure `
   - include : Delete workspace before build starts
   - Build Steps: Execute shell commands -> echo "hello world"
 - Click "Build now" to test build
+- create automation

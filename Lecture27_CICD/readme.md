@@ -114,12 +114,44 @@ docker run --name jenkins-blueocean --restart=on-failure `
 - Include pytest in requirements file
 - Run: pytest -vvvv
 
-## Create a Jenkins Build
+## Create a Jenkins Build (freestyle)
 
-- New item
+- From the Jenkins welcome page, on the left corner click on New item
+- Enter the name of the project
 - Frestyle project
 - Configure
   - include : Delete workspace before build starts
   - Build Steps: Execute shell commands -> echo "hello world"
+  - In Source Code Management, click on Git and add the repo that has the code
+  - In the repository put in a the URL
+  - In Branch Specifier (blank for 'any') provide the actual branch name "main"
+  - In Build Triggers, choose Poll SCM
+  - In Build Environment, select Delete workspace before build starts
+  - In Build Steps add the step Execute shell and put in python helloworld.py or python3 helloworld.py
 - Click "Build now" to test build
 - create automation
+  - Update Build Step 
+
+``` bash
+ls
+cd "Lecture27_CICD/my_app/"
+python3 calc_app.py
+```
+
+## Create a Jenkins Build (Pipeline)
+
+- New item
+- Pipeline project
+- Configure
+- Create Jenkins File to run pipeline (runs on Groovy)
+
+
+## Debug method
+
+- Docker ps
+- get container ID
+- Docker exec -it d68b3377cee2 bash
+- ls
+- cd var
+- cd jenkins_home
+- cd workspace

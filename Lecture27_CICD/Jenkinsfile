@@ -1,0 +1,68 @@
+pipeline {
+    agent any
+    triggers {
+        pollSCM '* * * * *'
+    }
+    stages {
+	    stage('Pull Repo') {
+            steps {
+                echo "Pulling repo.."
+                sh '''
+                FOLDER="simple_jenkins"
+                URL="https://github.com/oreakinodidi98/Python_lessons.git"
+                # Check if the folder exists
+                if [ -d "$FOLDER" ]; then
+                    cd "$FOLDER"
+                    git pull
+                else
+                    git clone "$URL" "$FOLDER"
+                    cd "$FOLDER"
+                fi
+
+                cd Lecture27_CICD/my_app
+                '''
+            }
+        }
+        stage('Install Dependencies') {
+            steps {
+                echo "Installing dependencies.."
+                sh '''
+                # Update package list and install python3-venv
+                cd simple_jenkins/Lecture27_CICD/my_app
+                apt-get update
+                apt-get install -y python3-venv
+                '''
+            }
+        }
+	    stage('Lib Intallation') {
+            steps {
+                echo "Virtual Environment.."
+                sh '''
+				cd simple_jenkins/Lecture27_CICD/my_app
+                python3 -m venv jenkins_venv
+				. ./jenkins_venv/bin/activate
+                pip install -r requirements.txt
+                '''
+            }
+        }
+        stage('Test') {
+            steps {
+                echo "Testing.."
+
+                sh '''
+                cd simple_jenkins/Lecture27_CICD/my_app
+                . ./jenkins_venv/bin/activate
+                python3 -m pytest -v
+                '''
+            }
+        }
+        stage('Deliver') {
+            steps {
+                echo 'Deliver....'
+                sh '''
+                echo "doing delivery stuff.."
+                '''
+            }
+        }
+    }
+}

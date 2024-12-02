@@ -22,7 +22,7 @@ deployment phase: ship to end users
 environment seamlessly and frequently.
 - Release/deployment pipeline
 - Opertations team -> Auto Script -> Test Enviroment -> Testig -> Public/GA
-- continous deployment: pushed the approved changes to production
+- **continous deployment**: pushed the approved changes to production
 - faster release cycles
 - delivery : manual approval
 - Deployment : authomated

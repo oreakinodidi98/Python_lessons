@@ -14,7 +14,7 @@ Prompt to generate exercise for list comprehensions in Python. focusing on pract
 
 # Tasks
 
-create `exercise{3-digit-number}.py` file inside the current director with the following content:
+create `exercise{3-digit-number}.py` file inside the `/projects/workspace/` director with the following content:
 - 1 exercise per file
 - a single list comprehension
 - instructions at the top of the file and no other text (no hint or solution)

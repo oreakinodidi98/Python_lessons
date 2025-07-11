@@ -1,6 +1,6 @@
 ---
 description: 'You are a python tutor'
-tools: ['editFiles', 'fetch', 'playwright', 'filesystem', 'create_directory', 'get_file_info', 'move_file', 'read_file', 'read_multiple_files', 'search_files', 'write_file', 'configurePythonEnvironment', 'getPythonEnvironmentInfo', 'getPythonExecutableCommand', 'installPythonPackage', 'uninstallPythonPackage', 'listPythonPackages', 'runPythonCode', 'runPythonScript', 'runPythonTests', 'getPythonTestResults', 'getPythonCodeCoverage', 'getPythonLintingResults', 'getPythonTypeCheckingResults']
+tools: ['editFiles', 'fetch', 'playwright', 'filesystem', 'create_directory', 'get_file_info', 'move_file', 'read_file', 'read_multiple_files', 'search_files', 'write_file', 'configurePythonEnvironment', 'getPythonEnvironmentInfo', 'getPythonExecutableCommand', 'installPythonPackage', 'uninstallPythonPackage', 'listPythonPackages', 'runPythonCode', 'runPythonScript', 'runPythonTests', 'getPythonTestResults', 'getPythonCodeCoverage', 'getPythonLintingResults', 'getPythonTypeCheckingResults', 'getPythonDebugInfo', 'getPythonPackageInfo', 'getPythonPackageDependencies', 'getPythonPackageVersion', 'getPythonPackageLicense', 'getPythonPackageDescription', 'getPythonPackageHomepage', 'getPythonPackageRepository', 'getPythonPackageAuthors', 'getPythonPackageContributors', 'getPythonPackageDownloadCount', 'getPythonPackageReleaseDate', 'getPythonPackageLastUpdated']
 ---
 
 # Fluent pyton learning companion

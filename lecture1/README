@@ -10,6 +10,7 @@ cp <source><destination> - copy a file or directory
 mv <source><destination> - move a file or directory
 exit python by ctrl+z+enter
 New-Item -ItemType File -Name README.md
+
 ## data types
 
 - **int**: whole number
@@ -20,6 +21,71 @@ New-Item -ItemType File -Name README.md
 - dont need to declare variable name, can type variable and value
 - Python is a runtime language -> can type code and see live change 
 - compile languaage -> need to compile the whole file before seeing results
+
+## Arithmetic operators
+
+- If you add, subtract, or multiply two integers, the result is an integer. But if you divide two integers, the result is a floating-point number.
+- Python provides another operator, `//`, that performs integer division. The result of integer division is always an integer.
+- Finally, the operator ** performs exponentiation; that is, it raises a number to a power
+  - E.G. `7**2=49`
+
+## Expressions
+
+- A collection of operators and numbers is called an expression. An expression can contain any number of operators and numbers. For example, here's an expression that contains two operators.
+- Python follows the order of operations you might have learned in a math class
+
+## Arithmetic functions
+
+- Python provides a few functions that work with numbers
+- The round function takes a floating-point number and rounds it off to the nearest integer.
+- `round(42.4)=42`
+- `round(42.6)=43`
+- The abs function computes the absolute value of a number. For a positive number, the absolute value is the number itself.
+- `abs(42)=42`
+- For a negative number, the absolute value is positive.
+- `abs(-42)=42`
+- When we use a function like this, we say we're `calling the function`.
+- An expression that calls a function is a function call.
+- When you call a function, the parentheses are required. If you leave them out, you get an error message.
+- `syntax error`, which means that there is something wrong with the structure of the expression
+
+### Strings
+
+- Python can also represent sequences of letters, which are called strings because the letters are strung together like beads on a necklace.
+- To write a string, we can put a sequence of letters inside straight quotation marks
+- E.G. `'Hello'`
+- It is also legal to use double quotation marks.
+  - Double quotes make it easy to write a string that contains an apostrophe, which is the same symbol as a straight quote.
+  - E.G. `"it's a small"`
+- The + operator works with strings; it joins two strings into a single string, which is called concatenation
+  - E.G. `'Well, ' + "it's a small " + 'world.'`
+- The * operator also works with strings; it makes multiple copies of a string and concatenates them.
+  - E.G. `'Spam, ' * 4`
+- Python provides a function called len that computes the length of a string.
+  - `len('Spam') =4`
+  - Notice that len counts the letters between the quotes, but not the quotes.
+
+### Type
+
+- A kind of value is called a type. Every value has a type -- or we sometimes say it "belongs to" a type.
+- Python provides a function called type that tells you the type of any value
+- The type of an integer is int.
+  - `type(2)=int`
+- The type of a floating-point number is float.
+  - `type(42.0)=float`
+- And the type of a string is str.
+  - type('Hello, World!')
+- The types int, float, and str can be used as functions. For example, int can take a floating-point number and convert it to an integer (always rounding down).
+  - E.G. `int(42.9)=42`
+- When you put a sequence of digits in quotes?
+  - '126'
+- It looks like a number, but it is actually a string.
+  - `type('126')=str`
+- `TypeError`,  means that the values in the expression, which are called `operands`, have the wrong type.
+- If you have a string that contains digits, you can use int to convert it to an integer.
+  - `int('126') / 3 =42.0`
+  - `type(abs) = builtin_function_or_method`
+  - `type(int) = type`
 
 ## condition staments
 
@@ -51,3 +117,18 @@ elif age >= 70:
 else:
     print("Class: D")
 ```
+
+## Formal and natural languages
+
+- **Natural languages** are the languages people speak, like English, Spanish, and French. They were not designed by people; they evolved naturally.
+- **Formal languages** are languages that are designed by people for specific applications.
+  - For example, the notation that mathematicians use is a formal language that is particularly good at denoting relationships among numbers and symbols.
+  - Similarly, **programming languages are formal languages** that have been designed to express computations.
+- Although formal and natural languages have some features in common there are important differences:
+  - **Ambiguity**: Natural languages are full of ambiguity, which people deal with by using contextual clues and other information. Formal languages are designed to be nearly or completely unambiguous, which means that any program has exactly one meaning, regardless of context.
+  - **Redundancy**: In order to make up for ambiguity and reduce misunderstandings, natural languages use redundancy. As a result, they are often verbose. Formal languages are less redundant and more concise.
+  - **Literalness**: Natural languages are full of idiom and metaphor. Formal languages mean exactly what they say.
+
+## Debugging
+
+- programming errors are called bugs and the process of tracking them down is called debugging.

@@ -57,6 +57,55 @@ z = x + y
 print (x , y, z)
 ```
 
+## Repetition
+
+```py
+for i in range(2):
+    print(i) # output 0 1
+
+for i in range(2):
+    print("Verse", i)
+    print_verse()
+    print()
+
+# output
+# Verse 0
+# Spam, Spam, Spam, Spam, 
+# Spam, Spam, Spam, Spam, 
+# Spam, Spam, 
+# (Lovely Spam, Wonderful Spam!)
+# Spam, Spam, 
+
+# Verse 1
+# Spam, Spam, Spam, Spam, 
+# Spam, Spam, Spam, Spam, 
+# Spam, Spam, 
+# (Lovely Spam, Wonderful Spam!)
+# Spam, Spam, 
+
+def print_n_verses(n):
+    for i in range(n):
+        print_verse()
+        print()
+
+for n in range(99, 0, -1):
+    bottle_verse(n)
+    print()
+```
+
+- The first line is a header that ends with a colon.
+- The second line is the body, which has to be indented.
+- The header starts with the keyword `for`, a new variable named `i`, and another keyword, `in`.
+- It uses the `range` function to create a sequence of two values, which are `0` and `1`.
+- In Python, when we start counting, we usually start from `0`.
+- When the `for` statement runs, it assigns the first value from `range` to `i` and then runs the `print` function in the body, which displays `0`.
+- When it gets to the end of the body, it loops back around to the header, which is why this statement is called a **loop**.
+- The second time through the loop, it assigns the next value from `range` to `i`, and displays it.
+Then, because that's the last value from `range`, the loop ends.
+
+- can put a `for` loop inside a function.
+  - For example, `print_n_verses` takes a parameter named `n`, which has to be an integer, and displays the given number of verses.
+
 ## Git
 
 - version control, system that records changes to files over time

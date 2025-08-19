@@ -132,3 +132,60 @@ else:
 ## Debugging
 
 - programming errors are called bugs and the process of tracking them down is called debugging.
+- Three kinds of errors can occur in a program: syntax errors, runtime errors, and semantic errors.
+It is useful to distinguish between them in order to track them down more quickly.
+
+  - **Syntax error**: "Syntax" refers to the structure of a program and the rules about that structure. If there is a syntax error anywhere in your program, Python does not run the program. It displays an error message immediately.
+    - an illegal variable name is a syntax error.
+
+  - **Runtime error**: If there are no syntax errors in your program, it can start running. But if something goes wrong, Python displays an error message and stops. This type of error is called a runtime error. It is also called an **exception** because it indicates that something exceptional has happened.
+    - If you use an operator with a type it doesn't support, that's a runtime error.
+
+  - **Semantic error**: The third type of error is "semantic", which means related to meaning. If there is a semantic error in your program, it runs without generating error messages, but it does not do what you intended. Identifying semantic errors can be tricky because it requires you to work backward by looking at the output of the program and trying to figure out what it is doing.
+
+## State diagrams
+
+- A common way to represent variables on paper is to write the name with
+an arrow pointing to its value
+- This kind of figure is called a **state diagram** because it shows what state each of the variables is in (think of it as the variable's state of mind).
+
+## Variable names
+
+- Variable names can be as long as you like. They can contain both letters and numbers, but they can't begin with a number.
+- It is legal to use uppercase letters, but it is conventional to use only lower case for variable names.
+
+## The import statement
+
+- In order to use some Python features, you have to **import** them.
+- For example, the following statement imports the `math` module.
+- A **module** is a collection of `variables and functions`.
+  - The math module provides a variable called `pi` that contains the value of the mathematical constant denoted $\pi$.
+  - To use a variable in a module, you have to use the **dot operator** (`.`) between the name of the module and the name of the variable.
+  - The math module also contains functions.
+  - For example, `sqrt` computes square roots.
+
+## Expressions and statements
+
+- An expression can be a single value, like an integer, floating-point number, or string.
+- It can also be a collection of values and operators.
+- And it can include variable names and function calls.
+- Here's an expression that includes several of these elements.
+- A **statement** is a unit of code that has an effect, but no value.
+- For example, an assignment statement creates a variable and gives it a value, but the statement itself has no value.
+- An import statement has an effect -- it imports a module so we can use the variables and functions it contains -- but it has no visible effect.
+  - Computing the value of an expression is called **evaluation**.
+Running a statement is called **execution**.
+
+## Arguments
+
+- When you call a function, the expression in parenthesis is called an **argument**.
+- Some take two, like `math.pow`.
+  - `math.pow(5, 2)=25`
+- Some can take additional arguments that are optional.
+  - For example, `int` can take a second argument that specifies the base of the number.
+  - `int('101', 2)=5`
+  - `print('The value of pi is approximately', math.pi)`
+  - The sequence of digits `101` in base 2 represents the number 5 in base 10.
+- `round` also takes an optional second argument, which is the number of decimal places to round off to.
+  - `round(math.pi, 3)=3.142`
+- If you call a function and provide too many arguments or too few, that's a `TypeError`.

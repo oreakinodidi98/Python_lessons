@@ -202,6 +202,24 @@ def next_position(position, player, m):
             return ("house", 0, "self")     # start again at P1 h1
         else:
             return ("house", m - 1, "self") # start again at P2 h(m)
+    #         # If not at end of your houses, go to next house
+    #         if idx < m - 1:
+    #             return ("house", idx + 1, "self")
+    #         else:
+    #             # After last house, go to own store
+    #             return ("store", "self")
+    #     else:  # opponent side
+    #         if idx > 0:
+    #             return ("house", idx - 1, "opp")
+    #         else:
+    #             # After first opponent house, go to opponent store
+    #             return ("store", "opponent")
+    # elif position == ("store", "self"):
+    #     # After your store, start opponent houses (rightmost first)
+    #     return ("house", m - 1, "opp")
+    # elif position == ("store", "opponent"):
+    #     # After opponent store, start your houses (leftmost first)
+    #     return ("house", 0, "self")
 
 # main program
 def main():
